@@ -11,6 +11,7 @@ buildscript {      // Configuration for building
 plugins {
     id 'org.springframework.boot' version '2.2.5.RELEASE'
     id 'java'
+    id 'com.google.cloud.tools.jib' version '2.1.0'
 }
 
 apply plugin: 'java'
@@ -64,4 +65,3 @@ jib {
     }
 }
 
-id 'com.google.cloud.tools.jib' version '2.1.0'
