@@ -2,11 +2,13 @@ package root_pack;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.config.server.EnableConfigServer;
 
 @SpringBootApplication
-public class ClientApplication {
+@EnableConfigServer
+public class ServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ClientApplication.class, args);
+        SpringApplication.run(ServerApplication.class, args);
     }
 }
