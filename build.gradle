@@ -56,7 +56,7 @@ appengine {
 
 jib {
     to {
-        image = "us.gcr.io/spring-samples-269912/config-client-image"
+        image = "us.gcr.io/spring-samples-269912/config-server-image"
         auth {
             username = "_json_key"
             password = file("secret.json").text
